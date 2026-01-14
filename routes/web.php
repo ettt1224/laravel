@@ -1,6 +1,15 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+
+
+
+Route::get('/user', [UserController::class, 'index']);
+
+Route::get('/git', function () {
+    dd('git ok');
+});
 
 Route::get('/calculator/{num1}/{num2}', function (string $num1, string $num2) {
 
@@ -39,6 +48,7 @@ Route::get('/user/{id}', function (string $id) {
 });
 
 Route::get('/', function () {
+    dd(123);
     $name = 'qwe';
     $mobile = '021316816';
     $test = "$name - $mobile";

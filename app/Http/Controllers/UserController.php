@@ -11,5 +11,9 @@ class UserController extends Controller
         dd('user.index');
     }
 
+        public function hello()
+    {
+        dd('user.hello');
+    }
     //
 }

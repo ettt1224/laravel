@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    123
+    3333
+    <a href="{{route('A1s.index')}}">1F</a> <br>
 </body>
 </html>

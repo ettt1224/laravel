@@ -1,11 +1,20 @@
 <?php
-
+use App\Http\Controllers\AController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 
+Route::get('/A1s.index', [AController::class, 'index'])->name('A1s.index');
+Route::get('/A1s.A1', [AController::class, 'A1'])->name('A1s.A1');
+Route::get('/A2s.A2', [AController::class, 'A2'])->name('A2s.A2');
+Route::get('/A3s.A3', [AController::class, 'A3'])->name('A3s.A3');
+Route::resource('A1s', AController::class);
 
-Route::get('/user', [UserController::class, 'index']);
+
+Route::get('/users', [UserController::class, 'index']);
+Route::get('/users_hello', [UserController::class, 'hello']);
+
+
 
 Route::get('/git', function () {
     dd('git ok');

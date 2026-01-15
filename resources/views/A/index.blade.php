@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    123
+    <a href="{{route('A1s.A1')}}">1F</a> <br>
+    <a href="{{route('A2s.A2')}}">2F</a> <br>
+    <a href="{{route('A3s.A3')}}">3F</a> <br>
+
+    
 </body>
 </html>

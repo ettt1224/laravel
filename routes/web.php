@@ -3,8 +3,9 @@ use App\Http\Controllers\AController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-
-
+Route::get('/A1s_blue', [AController::class, 'blue'])->name('A1s_blue');
+Route::get('/A1s.red', [AController::class, 'red'])->name('A1s.red');
+Route::get('/A1s.child', [AController::class, 'child'])->name('A1s.child');
 Route::get('/A1s.A1', [AController::class, 'A1'])->name('A1s.A1');
 Route::get('/A2s.A2', [AController::class, 'A2'])->name('A2s.A2');
 Route::get('/A3s.A3', [AController::class, 'A3'])->name('A3s.A3');

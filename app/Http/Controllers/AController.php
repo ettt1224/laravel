@@ -78,5 +78,21 @@ class AController extends Controller
     {
         return view('A.A3');
     }
+
+        public function child()
+    {
+        // dd('dog child ok dog controller');
+        return view('child');
+    }
     
+
+        public function blue()
+    {
+        return view('child');
+    }
+
+            public function red()
+    {
+        return view('child');
+    }
 }
